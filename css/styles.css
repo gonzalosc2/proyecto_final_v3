@@ -1,0 +1,219 @@
+/* ****************************************************** */
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* ****************************************************** */
+/* VERSION MOBILE */
+
+/* ****************************************************** */
+/* 1. ESTILOS DE HEADER */
+
+/* MENU DE NAVEGACION */
+
+
+/* ****************************************************** */
+/* 2. ESTILOS DE MAIN */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    /* background-color: #FEF9EF; */
+    margin: 5px;
+    padding: 10px 20px 10px 20px;
+    word-wrap: break-word;
+    text-align: justify;
+    /* box-shadow: 2px 2px 5px #d7d5d5fb; */
+}
+
+/* Estilo carrusel home */
+main #carouselFade {
+    margin-bottom: 20px;
+    width: 360px;
+    box-shadow: 2px 2xp 6px #fef72ae0;
+}
+
+/* Formato Títulos */
+main h1 {
+    /* margin-top: 2px;
+    margin-bottom: 5px; */
+    color: #f9cf00;
+    text-shadow: 2px 2px 6px #fbfb00d2;
+    font-weight: bold;
+    text-align: center;
+    font-size: xx-large;
+}
+
+main h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 6px #ff0000;
+    font-weight: bolder;
+    color: #e90000;
+    font-size: x-large;
+}
+
+main h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 6px #fa0707;
+    font-weight: bolder;
+    color: #e90000;
+    font-size: larger;
+}
+
+/* Formato Textos */
+main .texto {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+main .texto p {
+    margin-bottom: 5px;
+}
+
+main .texto #center {
+    font-weight: bold;
+    font-size: x-large;
+    color: #ff097c;
+    text-align: center;
+}
+
+main .texto_emph {
+    font-size: large;
+    font-style: bold italic;
+    font-weight: bolder;
+}
+
+/* Formato Botón Regreso */
+.volver {
+    margin-top: 2rem;
+    background-color: #ec0000;
+    border: none;
+    color: black;
+    text-align: center;
+    padding: 8px 16px;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 12px;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.volver:hover {
+    padding: 4px 8px;
+    font-size: 14px;
+    background-color: black;
+    border: 2px solid #ec0000;
+}
+
+.volver a:link {
+    color: white;
+    text-decoration-line: none;
+}
+
+.volver a:visited {
+    color: white;
+    text-decoration-line: none;
+}
+
+/* Formato bloque de imágenes en medio de texto */
+main .img_mid_text {
+    display: flex;
+    gap: .8rem;
+    margin-bottom: 1.5rem;
+}
+
+main .img_mid_text img {
+    height: 200px;
+    height: 200px;
+}
+
+main .img_mid_text .img_mobi_no_show {
+    display: none;
+}
+
+/* Formato formulario */
+main form {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 2px solid #fef72ae0;
+    border-radius: 25px;
+    padding: 1rem;
+}
+
+main form div {
+    margin: 10px;
+    padding: 2px;
+}
+
+/* ****************************************************** */
+/* ESTILOS DE FOOTER */
+
+footer .pie {
+    /* background-color: #fef72ae0; */
+    position: static;
+    bottom: 1px;
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: .9rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 4px #ff02029c;
+    color: #e90000;
+}
+
+#footer_no_show {
+    display: none;
+}
+
+
+/* ****************************************************** */
+/* VERSION DESKTOP */
+@media screen and (min-width:1024px) {
+
+    /* ************************************** */
+    /* 2. ESTILOS DE MAIN */
+
+    /* Formato Títulos */
+    main h2,
+    main h3 {
+        align-self: flex-start;
+    }
+
+    /* Formato bloque de imágenes en medio de texto */
+    main .img_mid_text img {
+        height: 300px;
+        height: 300px;
+    }
+
+    main .img_mid_text .img_mobi_no_show {
+        display: inline;
+    }
+
+    /* ****************************************************** */
+    /* ESTILOS DE FOOTER */
+
+    footer .pie {
+        justify-content: space-between;
+        font-size: 1.1rem;
+        font-weight: bolder;
+    }
+
+    #footer_no_show {
+        display: inline;
+    }
+
+}

@@ -1,0 +1,27 @@
+// mixin con parametros
+@mixin medidas($ancho, $alto, $color) {
+    width: $ancho;
+    height: $alto;
+    background-color: $color;
+    padding: 1rem;
+    margin: 2rem;
+    color: $color-texto;
+}
+
+
+// mixin sin parametros
+
+@mixin estilosBotones {
+    font-size: 2rem;
+    background-color: $color-botones;
+    text-align: center;
+    box-shadow: 1px 1px solid;
+}
+
+// mixin para flex
+@mixin flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}

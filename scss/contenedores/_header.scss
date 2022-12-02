@@ -1,0 +1,21 @@
+/* estilos de header */
+
+header {
+    background-color: $color-fondo;
+    @include flex;
+
+    h1 {
+        color: $color-texto;
+    }
+
+    nav {
+        ul {
+            list-style: none;
+            @include flex;
+
+            li {
+                color: $color-botones;
+            }
+        }
+    }
+}
