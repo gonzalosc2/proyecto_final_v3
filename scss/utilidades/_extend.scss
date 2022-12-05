@@ -1,8 +1,35 @@
 // extend
 
-%estilosSection {
-    text-align: center;
-    margin: 4rem;
-    padding: 2rem;
-    background-color: $color-fondo;
+// Formato Títulos
+%estilos-h1 {
+
+    h1 {
+        @include heading(0, 10px, $color-sombra-h1, bold, $color-h1, xx-large);
+        text-align: center;
+    }
+
+}
+
+// Formato texto
+%estilos-texto {
+    .texto {
+        margin-top: 5px;
+        margin-bottom: 20px;
+
+        p {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+// Estilo Flex
+%estilos-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    margin: 5px;
+    padding: 10px 20px 10px 20px;
+    word-wrap: break-word;
+    text-align: justify;
 }
