@@ -89,7 +89,6 @@ main {
     @extend %estilos-texto;
 
     .container_texto {
-
         @extend %estilos-h1;
         @extend %estilos-texto;
 
@@ -245,6 +244,10 @@ footer {
             @include flex-align;
         }
 
+        .texto {
+            @include flex-align;
+        }
+
         // Formato bloque de imágenes en medio de texto
         .img_mid_text {
             img {
@@ -256,6 +259,11 @@ footer {
             }
         }
 
+        .texto {
+            p {
+                text-align: left;
+            }
+        }
     }
 
 
